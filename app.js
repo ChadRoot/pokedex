@@ -1821,7 +1821,7 @@ const pokeData = [
 
 const container = document.querySelector('#container');
 const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
-const iconURL = 'pokecons/';
+const iconURL = 'https://pokedex-brown-delta.vercel.app/pokecons/';
 
 for (let i = 1; i <= 151; i++) {
   const card = document.createElement('div');
