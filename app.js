@@ -1821,18 +1821,27 @@ const pokeData = [
 
 const container = document.querySelector('#container');
 const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
+const iconURL = 'pokecons/';
 
 for (let i = 1; i <= 151; i++) {
   const card = document.createElement('div');
   card.classList.add('card')
   const pokemon = document.createElement('div');
-  pokemon.classList.add('pokemon');
+  pokemon.classList.add('pokemon')
   const label = document.createElement('span');
   label.innerText = `#${i}`
   const newImg = document.createElement('img');
   newImg.src = `${baseURL}${i}.png`
 
+  
+  const pokeType = pokeData[i-1].Type1;
+  const icon = document.createElement('img');
+  icon.src = `${iconURL}${pokeType}.svg`
+  icon.classList.add(pokeType)
+  icon.classList.add('poke-icon')
+
   container.appendChild(card);
+  pokemon.appendChild(icon);
   pokemon.appendChild(newImg);
   pokemon.appendChild(label);
   card.appendChild(pokemon);
@@ -1843,11 +1852,11 @@ for (let i = 1; i <= 151; i++) {
 
   const pokeTitle = document.createElement('h3');
   pokeTitle.classList.add('card-title');
-  pokeTitle.innerText = pokeData[i].Pokemon;
+  pokeTitle.innerText = pokeData[i-1].Pokemon;
   
   const pokeDesc = document.createElement('p');
   pokeDesc.classList.add('card-description');
-  pokeDesc.innerText = pokeData[i].Description
+  pokeDesc.innerText = pokeData[i-1].Description
 
   card.appendChild(backSide)
   backSide.appendChild(pokeTitle)

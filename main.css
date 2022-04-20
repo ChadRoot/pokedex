@@ -2,6 +2,30 @@
   margin: 0;
   padding: 0;
 }
+.poke-icon {
+  width: 20px;
+  background-color: #ACAD99;
+  border-radius: 50%;
+  padding: 5px;
+}
+.Bug{background-color: #A8B820;}
+.Dark{background-color: #79726B;}
+.Dragon{background-color: #8572C8;}
+.Electric{background-color: #E7C536;}
+.Fairy{background-color: #E8B0EB;}
+.Fighting{background-color: #C45D4C;}
+.Fire{background-color: #E87A3D;}
+.Flying{background-color: #90AAD7;}
+.Ghost{background-color: #816DB6;}
+.Grass{background-color: #82C95B;}
+.Ground{background-color: #CEB250;}
+.Ice{background-color: #81CFD7;}
+.Normal{background-color: #ACAD99;}
+.Poison{background-color: #B369AF;}
+.Psychic{background-color: #E96C95;}
+.Rock{background-color: #BAA85E;}
+.Steel{background-color: #9FA9AF;}
+.Water{background-color: #639CE4;}
 #title {
   text-align: center;
   font-size: 48px;
