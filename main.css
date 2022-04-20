@@ -2,26 +2,39 @@
   margin: 0;
   padding: 0;
 }
-
+#title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 64px;
+  margin: 40px 0px 0px 0px;
+}
+.subtitle {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 #container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, 210px);
   row-gap: 30px;
   column-gap: 10px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  width: auto;
+  max-width: 95%;
+  margin: auto;
 }
-
 .card {
   position: relative;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-
+  width: 100%
 }
-
 .card:hover {
   transform: rotateY(180deg);
 }
-
 .card,
 .pokemon {
   display: inline-flex;
@@ -32,31 +45,26 @@
   background-color: #f0f0f0;
   text-align: center;
 }
-
 .back-side {
   display: flex;
   flex-direction: column;
   align-content: center;
   transform: rotateY(180deg);
+  position: absolute;
 }
-
 .is-flipped {
   transform: rotateY(180deg);
 }
-
-.back-side {
-
-  position: absolute;
-}
-
 .pokemon,
 .back-side {
   -webkit-backface-visibility: hidden;
   /* Safari */
   backface-visibility: hidden;
+  height: 100%;
 }
-
-
+div.pokemon span {
+  font-weight: bold;
+}
 img {
   margin: auto;
   width: auto;
@@ -66,50 +74,50 @@ span {
   text-align: center;
 }
 
+.card-title {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-family: 'Roboto Mono', monospace !important;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
 @media screen and (min-width: 480px) {
   #container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 210px);
     row-gap: 30px;
     column-gap: 20px;
-    width: auto;
-    margin: auto;
   }
 }
-
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 720px) {
   #container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 210px);
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+}
+@media screen and (min-width: 980px) {
+  #container {
+    grid-template-columns: repeat(4, 210px);
     grid-template-rows: auto;
     row-gap: 30px;
     column-gap: 30px;
-    width: auto;
-    margin: auto;
   }
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
   #container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 210px);
     row-gap: 40;
     column-gap: 30;
-    max-width: 900px;
-    margin: auto;
   }
 }
-
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1480px) {
   #container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 210px);
     row-gap: 50px;
     column-gap: 30px;
-    max-width: 1100px;
-    margin: auto;
   }
 }
