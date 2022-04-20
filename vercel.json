@@ -1,0 +1,8 @@
+[{
+  "source": "/pokedex/:pokecons*",
+  "destination": "https://pokedex-brown-delta.vercel.app/:pokecons*"
+},
+{
+  "source": "/(.*)",
+  "destination": "/"
+}]
