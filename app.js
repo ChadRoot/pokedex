@@ -1821,7 +1821,7 @@ const pokeData = [
 
 const container = document.querySelector('#container');
 const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
-const iconURL = 'https://poke-dex-two.vercel.app/';
+const iconURL = 'https://personal-projectss.s3.us-east-2.amazonaws.com/';
 
 for (let i = 1; i <= 151; i++) {
   const card = document.createElement('div');
