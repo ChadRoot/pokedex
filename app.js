@@ -1836,7 +1836,7 @@ for (let i = 1; i <= 151; i++) {
   
   const pokeType = pokeData[i-1].Type1;
   const icon = document.createElement('img');
-  icon.src = `${pokeType}.svg`
+  icon.src = `/${pokeType}.svg`
   icon.classList.add(pokeType)
   icon.classList.add('poke-icon')
 
