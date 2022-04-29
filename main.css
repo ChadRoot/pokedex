@@ -2,45 +2,112 @@
   margin: 0;
   padding: 0;
 }
-.header{
-  margin-bottom: 50px;
-    font-family: 'Roboto Mono', monospace !important;
+
+html {
+  background: url("bahnijit-barman-1fZC2rYbpsU-unsplash.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+.header {
+  margin-bottom: 50px;
+  font-family: 'Roboto Mono', monospace !important;
+}
+
 .poke-icon {
   width: 20px;
   background-color: #ACAD99;
   border-radius: 50%;
   padding: 5px;
 }
-.Bug{background-color: #A8B820;}
-.Dark{background-color: #79726B;}
-.Dragon{background-color: #8572C8;}
-.Electric{background-color: #E7C536;}
-.Fairy{background-color: #E8B0EB;}
-.Fighting{background-color: #C45D4C;}
-.Fire{background-color: #E87A3D;}
-.Flying{background-color: #90AAD7;}
-.Ghost{background-color: #816DB6;}
-.Grass{background-color: #82C95B;}
-.Ground{background-color: #CEB250;}
-.Ice{background-color: #81CFD7;}
-.Normal{background-color: #ACAD99;}
-.Poison{background-color: #B369AF;}
-.Psychic{background-color: #E96C95;}
-.Rock{background-color: #BAA85E;}
-.Steel{background-color: #9FA9AF;}
-.Water{background-color: #639CE4;}
+
+.Bug {
+  background-color: #A8B820;
+}
+
+.Dark {
+  background-color: #79726B;
+}
+
+.Dragon {
+  background-color: #8572C8;
+}
+
+.Electric {
+  background-color: #E7C536;
+}
+
+.Fairy {
+  background-color: #E8B0EB;
+}
+
+.Fighting {
+  background-color: #C45D4C;
+}
+
+.Fire {
+  background-color: #E87A3D;
+}
+
+.Flying {
+  background-color: #90AAD7;
+}
+
+.Ghost {
+  background-color: #816DB6;
+}
+
+.Grass {
+  background-color: #82C95B;
+}
+
+.Ground {
+  background-color: #CEB250;
+}
+
+.Ice {
+  background-color: #81CFD7;
+}
+
+.Normal {
+  background-color: #ACAD99;
+}
+
+.Poison {
+  background-color: #B369AF;
+}
+
+.Psychic {
+  background-color: #E96C95;
+}
+
+.Rock {
+  background-color: #BAA85E;
+}
+
+.Steel {
+  background-color: #9FA9AF;
+}
+
+.Water {
+  background-color: #639CE4;
+}
+
 #title {
   text-align: center;
   font-size: 48px;
   line-height: 64px;
   margin: 40px 0px 0px 0px;
 }
+
 .subtitle {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
 }
+
 #container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 210px);
@@ -54,15 +121,18 @@
   max-width: 95%;
   margin: auto;
 }
+
 .card {
   position: relative;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  width: 100%
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .card:hover {
   transform: rotateY(180deg);
 }
+
 .card,
 .pokemon {
   display: inline-flex;
@@ -73,6 +143,7 @@
   background-color: #f0f0f0;
   text-align: center;
 }
+
 .back-side {
   display: flex;
   flex-direction: column;
@@ -80,9 +151,11 @@
   transform: rotateY(180deg);
   position: absolute;
 }
+
 .is-flipped {
   transform: rotateY(180deg);
 }
+
 .pokemon,
 .back-side {
   -webkit-backface-visibility: hidden;
@@ -90,9 +163,11 @@
   backface-visibility: hidden;
   height: 100%;
 }
+
 div.pokemon span {
   font-weight: bold;
 }
+
 img {
   margin: auto;
   width: auto;
@@ -113,6 +188,7 @@ span {
   font-size: 14px;
   padding-bottom: 10px;
 }
+
 @media screen and (min-width: 480px) {
   #container {
     grid-template-columns: repeat(2, 210px);
@@ -120,6 +196,7 @@ span {
     column-gap: 20px;
   }
 }
+
 @media screen and (min-width: 720px) {
   #container {
     grid-template-columns: repeat(3, 210px);
@@ -127,6 +204,7 @@ span {
     column-gap: 20px;
   }
 }
+
 @media screen and (min-width: 980px) {
   #container {
     grid-template-columns: repeat(4, 210px);
@@ -135,6 +213,7 @@ span {
     column-gap: 30px;
   }
 }
+
 @media screen and (min-width: 1240px) {
   #container {
     grid-template-columns: repeat(5, 210px);
@@ -142,6 +221,7 @@ span {
     column-gap: 30;
   }
 }
+
 @media screen and (min-width: 1480px) {
   #container {
     grid-template-columns: repeat(6, 210px);
