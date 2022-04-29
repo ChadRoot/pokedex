@@ -1840,12 +1840,17 @@ for (let i = 1; i <= 151; i++) {
   icon.classList.add(pokeType)
   icon.classList.add('poke-icon')
 
+  const link = document.createElement('p');
+  link.classList.add('read-more')
+  link.innerText = ('read more')
+  
   container.appendChild(card);
   pokemon.appendChild(icon);
   pokemon.appendChild(newImg);
   pokemon.appendChild(label);
+  pokemon.appendChild(link);
   card.appendChild(pokemon);
-
+  
   
   const backSide = document.createElement('div');
   backSide.classList.add('back-side');
@@ -1857,6 +1862,7 @@ for (let i = 1; i <= 151; i++) {
   const pokeDesc = document.createElement('p');
   pokeDesc.classList.add('card-description');
   pokeDesc.innerText = pokeData[i-1].Description
+
 
   card.appendChild(backSide)
   backSide.appendChild(pokeTitle)

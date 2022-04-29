@@ -128,17 +128,17 @@ html {
   transform-style: preserve-3d;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
 }
-.card:hover {
+/* .card:hover {
   transform: rotateY(180deg);
-}
+} */
 
 .card,
 .pokemon {
   display: inline-flex;
   flex-direction: column;
   cursor: pointer;
-  padding: 10px 0px;
   border-radius: 20px;
   background-color: #f0f0f0;
   text-align: center;
@@ -175,6 +175,11 @@ img {
 
 span {
   text-align: center;
+}
+
+.read-more {
+  margin-top: 10px;
+  text-decoration: underline;
 }
 
 .card-title {
